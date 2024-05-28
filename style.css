@@ -99,18 +99,20 @@ input {
     left: 1rem;
 }
 #p1{
-    z-index: 4;
+    z-index: 5;
 }
 #p2{
-    z-index: 3;
+    z-index: 4;
 }
 #p3{
-    z-index: 2;
+    z-index: 3;
 }
 #p4{
+    z-index: 2;
+}
+#p5{
     z-index: 1;
 }
-
 #checkbox-cover:checked ~ .book {
     transform: translateX(200px);
 }
@@ -142,4 +144,8 @@ input {
     z-index: 5;
 }
 
+#checkbox-p5:checked ~ .book #p5{
+    transform: rotateY(-180deg);
+    z-index: 6;
+}
 
